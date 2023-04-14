@@ -6,7 +6,7 @@ namespace CourseDataInput
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
             Console.WriteLine("Digite um número inteiro:");
             int n1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite um Caracter:");
@@ -52,6 +52,24 @@ namespace CourseDataInput
             Console.WriteLine(vetor[0]);
             Console.WriteLine(vetor[1]);
             Console.WriteLine(alt.ToString("F2", CultureInfo.InvariantCulture));
+
+            Console.WriteLine();
+            Console.WriteLine("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+            Console.WriteLine();
+            Console.WriteLine("<<  Exercício 6  >>");
+            Console.WriteLine();
+
+            string[] triNum = Console.ReadLine().Split(' ');
+            double triA = double.Parse(triNum[0], CultureInfo.InvariantCulture);
+            double triB = double.Parse(triNum[1], CultureInfo.InvariantCulture);
+            double triC = double.Parse(triNum[2], CultureInfo.InvariantCulture);
+            double pi = 3.14159;
+
+            Console.WriteLine("TRIANGULO: " + (triA * triC / 2).ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("CIRCULO: " + ((triC * triC) * pi).ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("TRAPEZIO: " + (((triA + triB) * triC) / 2).ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("QUADRADO: " + (triB * triB).ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("RETANGULO: " + (triA * triB).ToString("F3", CultureInfo.InvariantCulture));
         }
     }
 }
