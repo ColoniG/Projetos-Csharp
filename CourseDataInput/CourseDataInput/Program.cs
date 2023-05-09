@@ -59,6 +59,8 @@ namespace CourseDataInput
             Console.WriteLine("<<  Exercício 6  >>");
             Console.WriteLine();
 
+
+            Console.WriteLine("Digite três números separados por espaço!");
             string[] triNum = Console.ReadLine().Split(' ');
             double triA = double.Parse(triNum[0], CultureInfo.InvariantCulture);
             double triB = double.Parse(triNum[1], CultureInfo.InvariantCulture);
